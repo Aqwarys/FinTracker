@@ -5,6 +5,9 @@ from .models import Transaction, Category
 from .forms import TransactionForm, UpdateTransactionForm
 
 
+from django_filters.views import FilterView
+from .filters import TransactionFilter
+
 def index(request):
     if request.method == 'POST':
         form = TransactionForm(request.POST)
@@ -14,14 +17,14 @@ def index(request):
             return redirect('tracker:index')
     else:
         form = TransactionForm()
-
-    transactions = Transaction.objects.all()
+    f = TransactionFilter(request.GET, queryset=Transaction.objects.all())
     category = Category.objects.all()
 
     context = {
         'form': form,
-        'transactions': transactions,
-        'category': category
+        'transactions': f.qs,
+        'category': category,
+        'filter': f,
     }
     return render(request, 'tracker/index.html', context)
 
