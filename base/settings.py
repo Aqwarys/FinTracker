@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
     #apps
     'tracker.apps.TrackerConfig',
+    'export_data.apps.ExportDataConfig',
 ]
 
 MIDDLEWARE = [
