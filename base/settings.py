@@ -45,10 +45,12 @@ INSTALLED_APPS = [
     #3rd party apps
     'widget_tweaks',
     'django_filters',
+    'rest_framework',
 
     #apps
     'tracker.apps.TrackerConfig',
     'export_data.apps.ExportDataConfig',
+    'api.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [
