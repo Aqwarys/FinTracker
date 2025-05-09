@@ -27,8 +27,8 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/fintracker.git
-   cd fintracker
+   git clone git@github.com:Aqwarys/FinTracker.git
+   cd FinTracker
    ```
 
 2. Create and activate a virtual environment:
@@ -67,7 +67,7 @@
 ## 📁 Project Structure
 
 ```
-fintracker/
+FinTracker/
 ├── tracker/             # Main Django app
 │   ├── models.py        # Transaction model
 │   ├── views.py         # Views for listing and exporting
@@ -76,7 +76,6 @@ fintracker/
 │   └── templates/
 │       └── export_data/
 │           └── export_data.html  # Export UI
-├── static/              # CSS/JS files
 ├── manage.py
 └── requirements.txt     # Project dependencies
 ```
