@@ -108,6 +108,6 @@ python manage.py test
 ## 👤 Author
 
 **Aqwarys**
-Telegram: [@your\_username](https://github.com/Aqwarys)
+GitHub: [Aqwarys](https://github.com/Aqwarys)
 
 Contributions and feedback are always welcome!
